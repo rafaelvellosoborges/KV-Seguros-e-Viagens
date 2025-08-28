@@ -82,12 +82,33 @@
             <p>Sabemos que cada pessoa tem necessidades únicas. Por isso, oferecemos seguros personalizados, garantindo a proteção certa para você.</p>
         </div>
         <div class="apresentacao2">
+            <h1>Por Que Escolher o Grupo KV?</h1>
+            <p>Experiência e Confiança: Com anos de atuação no mercado, somos uma corretora de seguros confiável e experiente.</p>
+            <p>Atendimento Personalizado: Nossa equipe está pronta para entender suas necessidades e oferecer as melhores soluções.</p>
+            <p>Variedade de Produtos: Trabalhamos com diversas seguradoras para oferecer uma ampla gama de opções.</p>
+            <p>Facilidade e Comodidade: Oferecemos cotações online e atendimento ágil para sua conveniência.</p>    
 
-
-
-            
         </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
 
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  showSlide(current);
+  setInterval(nextSlide, 4000); // Troca a cada 4 segundos
+});
+</script>
 </body>
 <script src="./seguros.js"></script>
 >

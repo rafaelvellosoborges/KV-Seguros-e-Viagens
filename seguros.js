@@ -10,7 +10,7 @@ function showSlide(index) {
 function moveSlide(n) {
     currentSlide += n;
     if (currentSlide < 0) currentSlide = slides.length - 1;
-    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide >= slides.length) currentSlide = .3;
     showSlide(currentSlide);
 }
 
