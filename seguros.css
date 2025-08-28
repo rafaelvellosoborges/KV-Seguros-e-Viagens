@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+.containerheader {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #000000;
+  color: #fff;
+  gap: 20px;
+  text-align: center;
+  margin: 25px;
+}
+
+.cotacao {
+  right: 20px;  
+}
+
+.cotacao a {
+  background-color: #000000;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  display: block;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-left: 5%;
+  cursor: pointer;
+  width: 50%;
+
+}
+
+.banners {
+  position: relative;
+  width: 100%;
+  max-width: 1351px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.banners button.prev,
+.banners button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.banners button.prev {
+  left: 10px;
+}
+
+.banners button.next {
+  right: 10px;
+}
+
+.produtos1 {
+  color: white;
+  
+}
+.produtos1 h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.produtos2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.produto-box {
+  width: 200px;
+  height:200px;
+  background-color:rgba(255, 102, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+.produtos2 button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
