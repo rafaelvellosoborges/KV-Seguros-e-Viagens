@@ -4,41 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <title>KV Seguros e Viagen</title>
 </head>
 
 <body>
+    <div class="mascara-formulario" onclick="fecharForm()"></div>
     <header class="containerheader">
         <div class="menu">
-            <a href="./index.html">Home</a>
-            <a href="./seguros.html">Seguros</a>
-            <a>Contato</a>
-            <a>Sobre</a>
-            <a class="cotacao">Cotação On-Line</a>
+            <a class="home" href="./index.html">Home</a>
+            <a class="homeseguros" href="./seguros.html">Seguros</a>
+            <a class="homecontato">Contato</a>
+            <a class="homesobre">Sobre</a>
+            <button class="cotacao" onclick="mostrarForm ()">Cotação On-Line</button>
         </div>
     </header>
     <div class="welcome">
         <h1>Bem-vindo à KV Seguros e Viagens</h1>
         <p>Seu parceiro de confiança para soluções em seguros e viagens.</p>
     </div>
+    <div class="services-container">
+        <h2 class="services">Nossos Serviços</h2>
+        <div class="service-box">
+            <div class="viagem">
+                <a>Agência de Viagens</a>
+            </div>
+            <div class="seguros">
+                <a href="./seguros.html">Corretora de Seguros</a>
+            </div>
 
-    <h2 class="services">Nossos Serviços</h2>
-    <div class="service-box">
-        <div class="viagem">
-            <a>Agência de Viagens</a>
         </div>
-        <div class="seguros">
-            <a href="./seguros.html">Corretora de Seguros</a>
-        </div>
-
     </div>
     <div class="imagemfundo">
         <img src="./Gemini_Generated_Image_gvpe0kgvpe0kgvpe.png" alt="Imagem de Fundo">
         <div class="mascara"></div>
     </div>
-<footer class="footer">
-    <p>&copy; 2024 KV Seguros e Viagens. Todos os direitos reservados.</p>
+
+    <form class="formulario" action="https://formcarry.com/s/mHsDbYzukJU" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text>" name="Nome">
+        <input placeholder="Seu Telefone" type="tel" name="Telefone">
+        <textarea placeholder="Digite sua Dúvida" name="Dúvida"></textarea>
+        <button class="orçamento" type="submit">Enviar</button>
+    </form>
+
+    <footer class="footer">
+        <p>&copy; 2024 KV Seguros e Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/5512981122726" class="whatsapp-link" target="_blank">
+        <img src="./whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
 </body>
+<script src="./scripts.js"></script>
 
 </html>

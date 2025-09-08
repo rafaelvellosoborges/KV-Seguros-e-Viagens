@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./seguros.css">
     <title>KV Seguros e Viagens</title>
 </head>
@@ -15,9 +20,8 @@
                 <a href="./index.html">Home</a>
                 <a>Seguros</a>
                 <a>Consórcios</a>
-                <a>Contato</a>
                 <a>Sobre</a>
-                <a class="cotacao">Cotação On-Line</a>
+                <button class="cotacao" onclick="mostrarForm ()">Cotação On-Line</button>
             </div>
         </header>
     </div>
@@ -40,76 +44,62 @@
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
-
-    <div class="produtos1">
-        <h1>
-            Conheça Nossos Planos
-        </h1>
+    <div class="corpo">
+        <div class="produtos1">
+            <h1>
+                Nossos Principais Planos
+            </h1>
+        </div>
+        <div class="produtos2">
+            <div class="produto-box">
+                <h2>Seguro Auto</h2>
+                <p>Proteção completa para seu veículo.</p>
+                <button class="botaoprodutos">Saiba Mais</button>
+            </div>
+            <div class="produto-box">
+                <h2>Seguro Residencial</h2>
+                <p>Tranquilidade para sua casa.</p>
+                <button class="botaoprodutos">Saiba Mais</button>
+            </div>
+            <div class="produto-box">
+                <h2>Aeronautico</h2>
+                <p>Segurança para sua aeronave.</p>
+                <button class="botaoprodutos">Saiba Mais</button>
+            </div>
+            <div class="produto-box">
+                <h2>Embarcações</h2>
+                <p>Proteção para seu barco ou iate.</p>
+                <button class="botaoprodutos">Saiba Mais</button>
+            </div>
+            <div class="produto-box">
+                <h2>Seguro Viagem</h2>
+                <p>Viaje com segurança e tranquilidade.</p>
+                <button class="botaoprodutos">Saiba Mais</button>
+            </div>
+            <div class="apresentacao">
+                <h2>Por que escolher a KV Seguros e Viagens?</h2>
+                <p>Na KV Seguros e Viagens, oferecemos soluções personalizadas para proteger o que é mais importante
+                    para você. Com uma equipe dedicada e atendimento de excelência, estamos prontos para ajudar você a
+                    encontrar o plano ideal que se encaixa nas suas necessidades e orçamento. Sua segurança e
+                    tranquilidade são nossa prioridade.</p>
+            </div>
+        </div>
     </div>
-    <div class="produtos2">
-        <div class="produto-box">
-            <h2>Seguro Auto</h2>
-            <p>Proteção completa para seu veículo.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="produto-box">
-            <h2>Seguro Residencial</h2>
-            <p>Tranquilidade para sua casa.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="produto-box">
-            <h2>Seguro de Vida</h2>
-            <p>Segurança para você e sua família.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="produto-box">
-            <h2>Planos de Saúde e Odontológico</h2>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="produto-box">
-            <h2>Consórcios</h2>
-            <p>Cuidado com sua saúde e sorriso.</p>
-            <button>Saiba Mais</button>
-        </div>
-        <div class="produto-box">
-            <h2>Outros</h2>
-            <button>Saiba Mais</button>
-        </div>
+    <div class="mascara-formulario" onclick="fecharForm()"></div>
+    <form class="formulario" action="https://formcarry.com/s/mHsDbYzukJU" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text>" name="Nome">
+        <input placeholder="Seu Telefone" type="tel" name="Telefone">
+        <textarea placeholder="Digite sua Dúvida" name="Dúvida"></textarea>
+        <button class="orçamento" type="submit">Enviar</button>
+    </form>
+    <footer class="footer">
+        <p>&copy; 2024 KV Seguros e Viagens. Todos os direitos reservados.</p>
+    </footer>
 
-        <div class="apresentacao1">
-            <h1>Segurança e Tranquilidade para Você e Sua Família</h1>
-            <p>Oferecemos uma ampla gama de seguros e consórcios para atender às suas necessidades. Estamos aqui para garantir sua proteção e bem-estar.</p>
-            <p>Sabemos que cada pessoa tem necessidades únicas. Por isso, oferecemos seguros personalizados, garantindo a proteção certa para você.</p>
-        </div>
-        <div class="apresentacao2">
-            <h1>Por Que Escolher o Grupo KV?</h1>
-            <p>Experiência e Confiança: Com anos de atuação no mercado, somos uma corretora de seguros confiável e experiente.</p>
-            <p>Atendimento Personalizado: Nossa equipe está pronta para entender suas necessidades e oferecer as melhores soluções.</p>
-            <p>Variedade de Produtos: Trabalhamos com diversas seguradoras para oferecer uma ampla gama de opções.</p>
-            <p>Facilidade e Comodidade: Oferecemos cotações online e atendimento ágil para sua conveniência.</p>    
-
-        </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const slides = document.querySelectorAll('.slide');
-  let current = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-    });
-  }
-
-  function nextSlide() {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }
-
-  showSlide(current);
-  setInterval(nextSlide, 4000); // Troca a cada 4 segundos
-});
-</script>
+    <a href="https://wa.me/5512981122726" class="whatsapp-link" target="_blank">
+        <img src="./whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
 </body>
 <script src="./seguros.js"></script>
->
+
 </html>
